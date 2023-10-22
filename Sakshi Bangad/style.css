@@ -1,0 +1,145 @@
+nav {
+    background-color: #333;
+    /* Background color */
+    padding: 10px 0;
+    /* Add some padding */
+}
+
+.navbar {
+    list-style: none;
+    /* Remove list bullets */
+    text-align: left;
+    /* Center-align the items */
+}
+
+.navbar li {
+    display: inline;
+    /* Display list items inline */
+    margin-right: 20px;
+    /* Add spacing between items */
+}
+
+.navbar a {
+    text-decoration: none;
+    /* Remove underlines from links */
+    color: white;
+    /* Link text color */
+    font-size: 18px;
+    /* Link text size */
+}
+
+.navbar a:hover {
+    color: #f00;
+    /* Change link color on hover */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    margin-left: 40px;
+    color: #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+h2 {
+    margin-left: 40px;
+
+    color: white
+}
+
+/* Container for Code Editors */
+.code-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Code Input Areas */
+.code-input {
+    flex: 1;
+    padding: 10px;
+    border: 5px dotted brown;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+/* Output Area */
+#output {
+    display: block;
+    flex: 1;
+    align-content: center;
+    border: 5px dotted brown;
+    padding: 24px;
+    margin: auto;
+    background-color: #CCC;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 1440px;
+    height: 300px;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .code-container {
+        flex-direction: column;
+    }
+
+    .code-input {
+        width: 100%;
+    }
+
+    #output {
+        width: 100%;
+    }
+}
+
+
+/* Card container */
+.card-container {
+    text-align: center;
+}
+
+/* Individual card styles */
+.card {
+    display: inline-block;
+
+    width: calc(31% - 20px);
+    /* 33.33% width with a margin of 20px between cards */
+    padding: 15px;
+    background-color: #CCC;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: left;
+    margin: 10px;
+    /* Add some space around each card */
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #777;
+}
